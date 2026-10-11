@@ -1,22 +1,33 @@
-# Environment / secrets
+# Secrets
 .env
+kaggle.json
 
-# Data (never commit real data files)
+# Data outputs (keep empty folders)
 data/raw/*
 data/bronze/*
 data/silver/*
 data/gold/*
+data/warehouse/*
 !data/raw/.gitkeep
 !data/bronze/.gitkeep
 !data/silver/.gitkeep
 !data/gold/.gitkeep
+!data/warehouse/.gitkeep
 
 # Python
-__pycache__/
-*.pyc
 .venv/
 venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
 
-# OS/editor files
+# Warehouse / local files
+*.duckdb
+*.wal
+*.parquet
+*.log
+
+# OS
 .DS_Store
 .vscode/
