@@ -473,9 +473,9 @@ If the spec and the source data conflict (e.g. impossible timestamps), use warn 
 
 *(Contractor: fill this section as you build. Do not delete the requirements sections 1–18.)*
 
-**Platform:** *Option A / Option B — TBD*  
+**Platform:** Option B — local Python + DuckDB. Chosen so the pipeline runs on this laptop with no paid cloud and tests can run in CI.
 
-**How to download data:** *TBD*  
+**How to download data:** The nine Olist CSVs already live in `data/raw/` (not in Git). To get them on a new machine: (1) unzip [https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) into `data/raw/`, or (2) from the project root with the venv on, run `python scripts/download_data.py` (uses the Kaggle API if configured; otherwise it tells you which files are missing). 
 
 **How to run one day:** *TBD*  
 
