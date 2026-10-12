@@ -1,0 +1,4 @@
+review_id,order_id,review_score,review_comment_title,review_comment_message,review_creation_date,review_answer_timestamp
+rev_good,ord_good,5,ok,great,2018-08-06 00:00:00,2018-08-06 12:00:00
+rev_multi,ord_multi,4,,,2018-08-07 00:00:00,2018-08-07 09:00:00
+rev_bad,ord_pay2,9,too high,invalid score,2018-08-08 00:00:00,2018-08-08 10:00:00

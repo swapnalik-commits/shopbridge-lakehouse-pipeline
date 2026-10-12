@@ -1,0 +1,11 @@
+order_id,payment_sequential,payment_type,payment_installments,payment_value
+ord_good,1,credit_card,1,110.00
+ord_multi,1,boleto,1,90.00
+ord_pay2,1,credit_card,1,50.00
+ord_pay2,2,voucher,1,40.00
+ord_neg,1,credit_card,1,5.00
+ord_dup,1,credit_card,1,22.00
+ord_freight,1,boleto,1,9.00
+ord_late,1,debit_card,1,48.00
+ord_cancel,1,credit_card,1,0.00
+ord_warn,1,voucher,1,29.00

@@ -1,0 +1,14 @@
+order_id,order_item_id,product_id,seller_id,shipping_limit_date,price,freight_value
+ord_good,1,prod_a,sell_a,2018-08-05 00:00:00,100.00,10.00
+ord_multi,1,prod_a,sell_a,2018-08-05 00:00:00,50.00,5.00
+ord_multi,2,prod_b,sell_b,2018-08-05 00:00:00,30.00,5.00
+ord_pay2,1,prod_a,sell_a,2018-08-05 00:00:00,80.00,10.00
+ord_neg,1,prod_a,sell_a,2018-08-05 00:00:00,-5.00,10.00
+ord_dup,1,prod_a,sell_a,2018-08-05 00:00:00,20.00,2.00
+ord_dup,1,prod_a,sell_a,2018-08-05 00:00:00,21.00,2.00
+ord_freight,1,prod_a,sell_a,2018-08-05 00:00:00,10.00,-1.00
+,1,prod_a,sell_a,2018-08-05 00:00:00,10.00,1.00
+ord_null_item,,prod_a,sell_a,2018-08-05 00:00:00,10.00,1.00
+ord_late,1,prod_b,sell_b,2018-08-02 00:00:00,40.00,8.00
+ord_cancel,1,prod_c,sell_b,2018-08-05 00:00:00,15.00,3.00
+ord_warn,1,prod_b,sell_a,2018-08-05 00:00:00,25.00,4.00
