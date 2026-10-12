@@ -23,9 +23,14 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 
 
 def main(argv: list[str] | None = None) -> int:
+    from shopbridge.bronze import load_bronze
+
     args = parse_args(argv)
     logical_date = date.fromisoformat(args.logical_date)
     print(f"logical_date={logical_date.isoformat()} full_refresh={args.full_refresh}")
+    counts = load_bronze(logical_date)
+    for table, n_rows in counts.items():
+        print(f"{table}: {n_rows}")
     return 0
 
 
