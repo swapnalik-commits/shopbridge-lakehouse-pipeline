@@ -481,11 +481,13 @@ If the spec and the source data conflict (e.g. impossible timestamps), use warn 
 
 **How to run tests:** *TBD*  
 
-**GMV definition:** *TBD*  
+**GMV definition:** Item GMV is `SUM(price)` on `fct_order_items`. `freight_value` is a separate additive line measure and is not inside GMV.
 
-**SCD2 current-row convention:** *TBD*  
+**Amount collected:** `SUM(payment_value)` on `fct_payments`. This is not item GMV. Do not join payments to items to compute either number.
 
-**Timezone convention:** *TBD*  
+**SCD2 current-row convention:** The current row has `valid_to = DATE '9999-12-31'` and `is_current = true`. Use this sentinel everywhere. Do not use NULL.
+
+**Timezone convention:** Olist timestamps stay naive. No timezone conversion. Truncate the stored timestamp to a date.
 
 ---
 
